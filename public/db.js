@@ -12,11 +12,11 @@ request.onsuccess=function(event){
     if (navigator.onLine){
     checkdb(); 
     }
- }
- request.onerror=function(event){
-     console.log("Wrong!"+event.target.errorCode);
+    }
+    request.onerror=function(event){
+        console.log("Wrong!"+event.target.errorCode);
 
- }
+    }
 
 function saveRecord(record){
     const transaction = db.transaction(["pending"], "readwrite");

@@ -1,6 +1,7 @@
 body {
   font-size: 120%;
   font-family: Arial;
+  background-color: white;
 }
 
 button, input {
@@ -31,10 +32,20 @@ tr:nth-child(even) {
   max-width: 825px;
   text-align: center;
 }
+.header {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(165, 230, 215);
+  padding-bottom: 5%;
+}
 
 .total {
   font-size: 150%;
   text-decoration: underline;
+}
+.name {
+  font-size: 150%;
+  text-decoration-style: solid;
 }
 
 .form {

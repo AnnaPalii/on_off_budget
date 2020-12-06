@@ -8,7 +8,7 @@ fetch("/api/transaction")
   .then(data => {
     // save db data on global variable
     transactions = data;
-
+    console.log(transactions);
     populateTotal();
     populateTable();
     populateChart();
@@ -22,6 +22,7 @@ function populateTotal() {
 
   let totalEl = document.querySelector("#total");
   totalEl.textContent = total;
+
 }
 
 function populateTable() {
